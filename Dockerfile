@@ -10,7 +10,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Install dependencies yang dibutuhkan (discord.py)
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install discord.py
 
 # Salin seluruh file kode (bot.py) ke dalam container
 COPY . .
