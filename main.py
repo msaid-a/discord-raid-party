@@ -118,10 +118,6 @@ class PartyView(discord.ui.View):
   @discord.ui.button(
       label="DPS 2", style=discord.ButtonStyle.primary, emoji="⚔️", row=0
   )
-  async def btn_dps_2(
-      self, interaction: discord.Interaction, button: discord.ui.Button
-  ):
-    await self.handle_join(interaction, "DPS 2")
 
   @discord.ui.button(
       label="Swordmaster",
