@@ -9,9 +9,6 @@ ENV PYTHONUNBUFFERED=1
 # Set direktori kerja di dalam container
 WORKDIR /app
 
-# Salin requirements.txt terlebih dahulu untuk efisiensi caching Docker
-COPY requirements.txt .
-
 # Install dependencies yang dibutuhkan (discord.py)
 RUN pip install --no-cache-dir -r requirements.txt
 
