@@ -116,10 +116,6 @@ class PartyView(discord.ui.View):
     await self.handle_join(interaction, "Healer")
 
   @discord.ui.button(
-      label="DPS 2", style=discord.ButtonStyle.primary, emoji="⚔️", row=0
-  )
-
-  @discord.ui.button(
       label="Swordmaster",
       style=discord.ButtonStyle.primary,
       emoji="🗡️",
